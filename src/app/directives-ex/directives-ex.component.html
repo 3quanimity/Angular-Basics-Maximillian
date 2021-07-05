@@ -1,0 +1,10 @@
+<h3>Exercice3: Practicing Directives</h3>
+<button class="btn btn-primary" (click)="onClickBtn()">Display Details</button>
+<span *ngIf="isDisplay"> 👉 Password="123"</span>
+<p
+  *ngFor="let log of btnClickLog; let i = index"
+  [ngStyle]="{ backgroundColor: i >= 2 ? 'blue' : 'transparent' }"
+  [ngClass]="{ 'white-text': i >= 2 }"
+>
+  Clicked at {{ log }}
+</p>

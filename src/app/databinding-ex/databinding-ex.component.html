@@ -1,0 +1,8 @@
+<h3>Exercice2: Practicing DataBinding</h3>
+<label for="userName">User Name</label>
+<!-- Two Way Binding  -->
+<input type="text" name="userName" class="form-control" [(ngModel)]="userName">
+<!-- Event Binding  -->
+<button [disabled]="!userName" class="btn btn-primary" (click)="onClearUserName()">Clear Name</button>
+<!-- Data Binding : String interpolation -->
+<p>Hello {{userName}}</p>
